@@ -87,10 +87,10 @@ The project icon is preserved at the required **1024×1024** size:
 
 The portrait screenshot below is a separate, device-frame-free **1179×2556** asset suitable for the Devpost screenshot requirement:
 
-`assets/devpost-inkmind-portrait.png`
+`assets/devpost-inkmind-portrait-inkdebug.png`
 
 <p align="center">
-  <img src="assets/devpost-inkmind-portrait.png" width="390" alt="InkMind portrait showcase screenshot" />
+  <img src="assets/devpost-inkmind-portrait-inkdebug.png" width="390" alt="InkMind portrait showcase featuring InkDebug" />
 </p>
 
 ## Tests
