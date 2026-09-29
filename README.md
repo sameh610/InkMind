@@ -278,7 +278,7 @@ https://github.com/user-attachments/assets/b29e912e-01a9-468a-8885-247cedd3113c
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f8b7733a-262e-4ec7-85d2-0812bf04322b" />
 
-<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/8d872984-c156-4085-bd55-90e5423824ab" />
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/de3f691b-75d1-4889-adf3-d20ed46c92ab" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/23a5558c-42f7-45e9-bf07-6d49c6d78bf0" />
 
