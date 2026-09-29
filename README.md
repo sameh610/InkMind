@@ -13,10 +13,9 @@ Instead of moving your thinking into a chatbot, InkMind brings intelligence dire
 **See the interaction immediately:**
 
 <p align="center">
-  <video controls width="720" poster="demo/audit/moon-drop-check.png">
-    <source src="https://raw.githubusercontent.com/sameh610/InkMind/main/demo/video/public/footage/inkmind-animate-ink-pendulum.mp4" type="video/mp4" />
-    <a href="https://github.com/sameh610/InkMind/raw/main/demo/video/public/footage/inkmind-animate-ink-pendulum.mp4">Play the short Animate Ink video</a>
-  </video>
+  <a href="https://github.com/sameh610/InkMind/raw/main/demo/video/public/footage/inkmind-animate-ink-pendulum.mp4">
+    ▶ Watch Animate Ink demo
+  </a>
 </p>
 
 <p align="center">
