@@ -10,7 +10,11 @@ InkMind is a local-first handwritten notebook where your ink can move, become in
 
 Instead of moving your thinking into a chatbot, InkMind brings intelligence directly onto the page.
 
-**See the interaction immediately:** [watch the full InkMind demo](demo/video/public/footage/inkmind-demo.webm) — it includes selecting **Animate Ink**, entering the motion parameters, and watching the original pendulum strokes come to life.
+**See the interaction immediately:**
+
+<p align="center">
+  <img src="demo/video/public/footage/inkmind-animate-ink-pendulum.gif" width="720" alt="Animate Ink: open Animate Ink, enter motion parameters, and bring a hand-drawn pendulum to life" />
+</p>
 
 <p align="center">
   <img src="demo/audit/moon-drop-check.png" width="780" alt="InkMatter applies Moon gravity to a hand-drawn pendulum" />
