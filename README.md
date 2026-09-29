@@ -31,6 +31,12 @@ The original strokes stay on the page. A handwritten **Moon** modifier changes t
 - **Local AI** — route tasks to compatible browser or native models, with visible model and quantization selection.
 - **InkMind Pro** — unlock advanced AI, animation, InkCells, and subscription features through RevenueCat.
 
+### Explain and Create quiz
+
+The **Explain** button reads the current selection (or the ready-to-use idea on the demo page) and adds a plain-language explanation beside it. It uses the selected ink as the source, keeps the response grounded in that content, and shows an error instead of silently inventing an answer if the AI cannot respond.
+
+The **Create quiz** button uses the same selected content to generate a three-question interactive quiz. Each question includes choices, the correct answer, and an explanation. The quiz is inserted as an InkCell on the page so it can be answered directly and revisited later. Both actions work with the browser AI worker or the optional local companion; the first AI use may download model weights.
+
 ## InkScript
 
 InkScript is a small, constrained language for visuals and motion. The AI produces a draw-first script; InkMind validates it, compiles it to InkIR, and renders it through deterministic Flutter widgets. This keeps generated output direct, inspectable, and safe to run.
