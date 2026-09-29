@@ -316,7 +316,7 @@ The repository reflects the current working prototype and ongoing development.
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone (https://github.com/sameh610/InkMind.git)
 cd InkMind
 ```
 
