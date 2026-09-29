@@ -276,15 +276,15 @@ https://github.com/user-attachments/assets/b29e912e-01a9-468a-8885-247cedd3113c
 
 ## Screenshots
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f8b7733a-262e-4ec7-85d2-0812bf04322b" />
 
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/8d872984-c156-4085-bd55-90e5423824ab" />
 
-Recommended order:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/23a5558c-42f7-45e9-bf07-6d49c6d78bf0" />
 
-1. Animate Ink
-2. InkMatter
-3. InkDebug
-4. New Visual
-5. InkMind Pro
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/91eb985d-9ee1-4dec-a97d-e96936f865e6" />
+
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/3c999bbe-a2d1-4c56-b99e-cc5282c6e04f" />
 
 ---
 
