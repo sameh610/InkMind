@@ -13,7 +13,10 @@ Instead of moving your thinking into a chatbot, InkMind brings intelligence dire
 **See the interaction immediately:**
 
 <p align="center">
-  <img src="demo/video/public/footage/inkmind-animate-ink-pendulum.gif" width="720" alt="Animate Ink: open Animate Ink, enter motion parameters, and bring a hand-drawn pendulum to life" />
+  <video controls width="720" poster="demo/audit/moon-drop-check.png">
+    <source src="demo/video/public/footage/inkmind-animate-ink-pendulum.mp4" type="video/mp4" />
+    <a href="demo/video/public/footage/inkmind-animate-ink-pendulum.mp4">Play the short Animate Ink video</a>
+  </video>
 </p>
 
 <p align="center">
