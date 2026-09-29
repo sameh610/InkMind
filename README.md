@@ -356,18 +356,29 @@ flutter test
 A simplified overview:
 
 ```text
-lib/
-├── notebook/
-├── canvas/
-├── ink/
-├── animate_ink/
-├── ink_debug/
-├── ink_matter/
-├── inkscript/
-├── ai/
-├── models/
-├── subscriptions/
-└── settings/
+InkMind/
+├─ android/              Android platform project
+├─ ios/                  iOS platform project
+├─ web/                  Flutter web shell and browser AI bridge
+├─ lib/
+│  ├─ app/               App root and routing
+│  ├─ core/              Models, storage, theme, shared UI
+│  └─ features/
+│     ├─ ai/             AI engine, model catalog, InkScript
+│     ├─ canvas/         Drawing canvas and gestures
+│     ├─ living_ink/     Animate Ink and motion editor
+│     ├─ inkdebug/       InkDebug and stroke history
+│     ├─ inkcells/       Interactive visual cells
+│     ├─ visuals/        New Visual rendering
+│     └─ subscriptions/  RevenueCat and demo billing
+├─ assets/               Fonts and app assets
+├─ tools/                Native AI runner, model tools, tests, scripts
+├─ test/                 Flutter tests
+├─ demo/video/            Trailer source footage and Remotion project
+├─ pubspec.yaml          Flutter dependencies
+├─ package.json           Node/browser AI dependencies
+├─ package-lock.json
+└─ .gitignore
 ```
 
 The exact structure may change as the project evolves.
@@ -405,4 +416,4 @@ InkMind's focus is not just adding AI to a notebook.
 It is exploring a different interface for AI:
 
 > **the page itself.**
-> <img width="1920" height="1080" alt="action-logo-check" src="https://github.com/user-attachments/assets/97bdad7a-0546-4aa3-8968-9ce92e6cf9fa" />
+<img width="1920" height="1080" alt="action-logo-check" src="https://github.com/user-attachments/assets/97bdad7a-0546-4aa3-8968-9ce92e6cf9fa" />
