@@ -15,10 +15,8 @@ Instead of moving your thinking into a chatbot, InkMind brings intelligence dire
 
 https://github.com/user-attachments/assets/cfeb89f4-903b-4cc6-9757-e7da34621928
 
+<img src="demo/audit/moon-drop-check.png" width="780" alt="InkMatter applies Moon gravity to a hand-drawn pendulum" />
 
-<p align="center">
-  <img src="demo/audit/moon-drop-check.png" width="780" alt="InkMatter applies Moon gravity to a hand-drawn pendulum" />
-</p>
 
 The original strokes stay on the page. A handwritten **Moon** modifier changes the pendulum's gravity, and the simulation runs on the ink itself.
 
