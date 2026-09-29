@@ -1,0 +1,30 @@
+{
+  "marks": [
+    {
+      "name": "ball-page",
+      "seconds": 4.86,
+      "detail": "Original ball strokes and floor visible on sixth demo page"
+    },
+    {
+      "name": "ball-selected",
+      "seconds": 7.26,
+      "detail": "true"
+    },
+    {
+      "name": "instruction",
+      "seconds": 7.86,
+      "detail": "Bounce original ball strokes up and down repeatedly; floor still"
+    },
+    {
+      "name": "animate-execute",
+      "seconds": 8.08,
+      "detail": "Animate Ink submitted through the real app"
+    },
+    {
+      "name": "capture-error",
+      "seconds": 188.1,
+      "detail": "TimeoutError: locator.waitFor: Timeout 180000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Play motion' }) to be visible\u001b[22m\n"
+    }
+  ],
+  "errors": []
+}

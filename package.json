@@ -1,0 +1,18 @@
+{
+  "name": "inkmind-browser-ai",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:ai": "node tools/generate_model_catalog.mjs && esbuild tools/ai_worker.js --bundle --format=esm --platform=browser --target=es2022 --outfile=web/ai_worker.bundle.js",
+    "native:ai": "node tools/native_ai_runner.mjs",
+    "web:edge": "powershell -ExecutionPolicy Bypass -File tools/run_web_edge.ps1"
+  },
+  "devDependencies": {
+    "@huggingface/transformers": "^4.3.0",
+    "esbuild": "0.25.12",
+    "playwright": "^1.63.0"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.29.9"
+  }
+}

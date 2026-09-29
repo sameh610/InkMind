@@ -1,0 +1,21 @@
+{
+  "name": "inkmind-shipaton-film",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/launch_v3_index.tsx",
+    "render": "npm run render:clean",
+    "render:clean": "remotion render src/launch_v3_index.tsx InkMindLaunchV3Clean out/inkmind-launch-trailer-v3-clean.mp4 --muted --codec=h264 --crf=18 --concurrency=2",
+    "render:captioned": "remotion render src/launch_v3_index.tsx InkMindLaunchV3 out/inkmind-launch-trailer-v3-captioned.mp4 --muted --codec=h264 --crf=18 --concurrency=2",
+    "studio:previous": "remotion studio src/index.tsx",
+    "postrender:clean": "node ../../tools/finalize_launch_v3.cjs clean",
+    "postrender:captioned": "node ../../tools/finalize_launch_v3.cjs captioned"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.527",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.527"
+  }
+}

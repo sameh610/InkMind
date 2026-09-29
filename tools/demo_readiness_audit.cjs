@@ -1,0 +1,44 @@
+const {chromium}=require('playwright');
+const fs=require('fs');
+const path=require('path');
+
+(async()=>{
+  const out=path.join(process.cwd(),'demo','audit');
+  fs.mkdirSync(out,{recursive:true});
+  const browser=await chromium.launch({channel:'msedge',headless:true});
+  const page=await browser.newPage({viewport:{width:1440,height:900},deviceScaleFactor:1});
+  const errors=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
+  await page.goto('http://127.0.0.1:8080/?audit=shipaton',{waitUntil:'domcontentloaded'});
+  await page.waitForTimeout(4500);
+  const snap=async(name)=>{
+    await page.screenshot({path:path.join(out,name),fullPage:true});
+    return (await page.locator('body').innerText()).replace(/\s+/g,' ').trim();
+  };
+  const states=[];
+  states.push({step:'Notebook editor',text:(await snap('01-notebook-editor.png')).slice(0,700)});
+  await page.getByRole('button',{name:'Page overview'}).click();
+  await page.waitForTimeout(350);
+  states.push({step:'Page overview',text:(await snap('02-page-overview.png')).slice(0,1200)});
+  await page.mouse.click(1410,34);
+  await page.getByRole('button',{name:'Notebook settings'}).waitFor();
+  await page.getByRole('button',{name:'Notebook settings'}).click();
+  const settingsItem=page.getByRole('menuitem',{name:'Settings & AI models'});
+  await settingsItem.waitFor(); await settingsItem.click();
+  await page.waitForTimeout(350);
+  states.push({step:'AI settings',text:(await snap('03-ai-settings.png')).slice(0,1200)});
+  await page.getByRole('button',{name:'Close settings'}).click();
+  await page.getByRole('button',{name:'Notebook settings'}).waitFor();
+  await page.getByRole('button',{name:'Notebook settings'}).click();
+  await page.getByRole('menuitem',{name:'InkMind Pro'}).click();
+  await page.waitForTimeout(350);
+  states.push({step:'Paywall',text:(await snap('04-paywall.png')).slice(0,1200)});
+  await page.getByRole('button',{name:'Continue with Annual'}).click();
+  await page.waitForTimeout(250);
+  states.push({step:'Entitlement',text:(await snap('05-demo-entitlement.png')).slice(0,1200)});
+  const before=await page.evaluate(()=>window.InkMindBrowserAI?.selection('Automatic','Auto'));
+  const connected=await page.evaluate(()=>window.InkMindBrowserAI?.probeNative());
+  console.log(JSON.stringify({title:await page.title(),url:page.url(),connected,before,errors,states},null,2));
+  await browser.close();
+})().catch(error=>{console.error(error);process.exitCode=1});

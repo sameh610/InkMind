@@ -1,0 +1,14 @@
+{
+  "marks": [
+    {
+      "name": "motion-rig",
+      "seconds": 2.47,
+      "detail": "Saved generated pendulum source is available"
+    },
+    {
+      "name": "code-open",
+      "seconds": 3,
+      "detail": "Real app InkScript editor opened"
+    }
+  ]
+}

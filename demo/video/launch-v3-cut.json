@@ -1,0 +1,762 @@
+{
+  "fps": 30,
+  "bpm": 132,
+  "duration": 81.16666666666667,
+  "logo": 78.16666666666667,
+  "shots": [
+    {
+      "from": 0,
+      "to": 0.6,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 3.615,
+      "rate": 1,
+      "zoom": 1.8,
+      "focus": [
+        0.5,
+        0.41
+      ]
+    },
+    {
+      "from": 0.6,
+      "to": 2.3,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 4.087,
+      "rate": 0.9711764705882359,
+      "zoom": 1.65,
+      "focus": [
+        0.5,
+        0.43
+      ]
+    },
+    {
+      "from": 2.3,
+      "to": 3.5,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 5.738,
+      "rate": 1.0774999999999992,
+      "zoom": 2,
+      "focus": [
+        0.75,
+        0.75
+      ]
+    },
+    {
+      "from": 3.5,
+      "to": 5.7,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 7.031,
+      "rate": 1.3881818181818186,
+      "zoom": 1.6,
+      "focus": [
+        0.5,
+        0.43
+      ]
+    },
+    {
+      "from": 5.7,
+      "to": 6.4,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 10.362,
+      "rate": 1.4757142857142846,
+      "zoom": 1.4,
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "label": "Local vision · model wait shortened"
+    },
+    {
+      "from": 6.4,
+      "to": 8.166666666666666,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 11.395,
+      "rate": 1,
+      "zoom": 1.62,
+      "focus": [
+        0.5,
+        0.49
+      ]
+    },
+    {
+      "from": 8.166666666666666,
+      "to": 9.533333333333333,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 12.870000000000001,
+      "rate": 1,
+      "zoom": 1.45,
+      "focus": [
+        0.43,
+        0.62
+      ]
+    },
+    {
+      "from": 9.533333333333333,
+      "to": 11.833333333333334,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 13.42,
+      "rate": 1.0895652173913042,
+      "zoom": 1.2,
+      "focus": [
+        0.49,
+        0.55
+      ]
+    },
+    {
+      "from": 11.833333333333334,
+      "to": 13.633333333333333,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 15.926,
+      "rate": 1,
+      "zoom": 1.35,
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "label": "g = 1.62 m/s²"
+    },
+    {
+      "from": 13.633333333333333,
+      "to": 16.366666666666667,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 17.676,
+      "rate": 1,
+      "zoom": 1.6,
+      "focus": [
+        0.5,
+        0.48
+      ]
+    },
+    {
+      "from": 16.366666666666667,
+      "to": 16.966666666666665,
+      "clip": "footage/v3-debug.webm",
+      "source": 5.72,
+      "rate": 1,
+      "zoom": 1.8,
+      "focus": [
+        0.43,
+        0.34
+      ]
+    },
+    {
+      "from": 16.966666666666665,
+      "to": 19.1,
+      "clip": "footage/v3-debug.webm",
+      "source": 5.972,
+      "rate": 0.6914062499999989,
+      "zoom": 1.6,
+      "focus": [
+        0.43,
+        0.35
+      ]
+    },
+    {
+      "from": 19.1,
+      "to": 20,
+      "clip": "footage/v3-debug.webm",
+      "source": 7.447,
+      "rate": 0.3811111111111117,
+      "zoom": 2,
+      "focus": [
+        0.75,
+        0.75
+      ]
+    },
+    {
+      "from": 20,
+      "to": 22.733333333333334,
+      "clip": "footage/v3-debug.webm",
+      "source": 12.913,
+      "rate": 0.3914634146341463,
+      "zoom": 1.58,
+      "focus": [
+        0.485,
+        0.65
+      ],
+      "label": "Original stroke order · rewind"
+    },
+    {
+      "from": 22.733333333333334,
+      "to": 24.533333333333335,
+      "clip": "footage/v3-debug.webm",
+      "source": 13.983,
+      "rate": 0.2666666666666668,
+      "zoom": 1.9,
+      "focus": [
+        0.442,
+        0.636
+      ],
+      "label": "First divergence: 3x = 25"
+    },
+    {
+      "from": 24.533333333333335,
+      "to": 27.266666666666666,
+      "clip": "footage/v3-debug.webm",
+      "source": 14.463000000000001,
+      "rate": 0.4390243902439026,
+      "zoom": 1.7,
+      "focus": [
+        0.49,
+        0.66
+      ]
+    },
+    {
+      "from": 27.266666666666666,
+      "to": 29.1,
+      "clip": "footage/v3-debug.webm",
+      "source": 15.663,
+      "rate": 0.1636363636363638,
+      "zoom": 1.6,
+      "focus": [
+        0.49,
+        0.67
+      ]
+    },
+    {
+      "from": 29.1,
+      "to": 29.633333333333333,
+      "clip": "footage/v3-graph.webm",
+      "source": 5.938,
+      "rate": 1,
+      "zoom": 1.9,
+      "focus": [
+        0.45,
+        0.32
+      ]
+    },
+    {
+      "from": 29.633333333333333,
+      "to": 31.366666666666667,
+      "clip": "footage/v3-graph.webm",
+      "source": 6.082,
+      "rate": 0.7967307692307689,
+      "zoom": 1.55,
+      "focus": [
+        0.47,
+        0.37
+      ]
+    },
+    {
+      "from": 31.366666666666667,
+      "to": 32.733333333333334,
+      "clip": "footage/v3-graph.webm",
+      "source": 7.463,
+      "rate": 0.45804878048780495,
+      "zoom": 2,
+      "focus": [
+        0.75,
+        0.75
+      ]
+    },
+    {
+      "from": 32.733333333333334,
+      "to": 34.166666666666664,
+      "clip": "footage/v3-graph.webm",
+      "source": 9.334000000000001,
+      "rate": 0.694186046511629,
+      "zoom": 1.55,
+      "focus": [
+        0.5,
+        0.44
+      ]
+    },
+    {
+      "from": 34.166666666666664,
+      "to": 35.46666666666667,
+      "clip": "footage/v3-graph.webm",
+      "source": 10.504,
+      "rate": 0.9992307692307669,
+      "zoom": 1.35,
+      "focus": [
+        0.49,
+        0.54
+      ]
+    },
+    {
+      "from": 35.46666666666667,
+      "to": 38.166666666666664,
+      "clip": "footage/v3-graph.webm",
+      "source": 11.503,
+      "rate": 0.7133333333333345,
+      "zoom": 1.48,
+      "focus": [
+        0.495,
+        0.59
+      ]
+    },
+    {
+      "from": 38.166666666666664,
+      "to": 39.46666666666667,
+      "clip": "footage/v3-projectile.webm",
+      "source": 6.183,
+      "rate": 1.2315384615384575,
+      "zoom": 1.6,
+      "focus": [
+        0.48,
+        0.35
+      ]
+    },
+    {
+      "from": 39.46666666666667,
+      "to": 40.53333333333333,
+      "clip": "footage/v3-projectile.webm",
+      "source": 8.01,
+      "rate": 0.41718750000000177,
+      "zoom": 2,
+      "focus": [
+        0.75,
+        0.75
+      ]
+    },
+    {
+      "from": 40.53333333333333,
+      "to": 41.833333333333336,
+      "clip": "footage/v3-projectile.webm",
+      "source": 11.78,
+      "rate": 1,
+      "zoom": 1.5,
+      "focus": [
+        0.49,
+        0.57
+      ]
+    },
+    {
+      "from": 41.833333333333336,
+      "to": 43.63333333333333,
+      "clip": "footage/v3-bird.webm",
+      "source": 11.049,
+      "rate": 1.9805555555555594,
+      "zoom": 1.6,
+      "focus": [
+        0.5,
+        0.46
+      ]
+    },
+    {
+      "from": 43.63333333333333,
+      "to": 44.833333333333336,
+      "clip": "footage/v3-bird.webm",
+      "source": 15.445,
+      "rate": 1.0266666666666637,
+      "zoom": 2,
+      "focus": [
+        0.75,
+        0.75
+      ]
+    },
+    {
+      "from": 44.833333333333336,
+      "to": 45.833333333333336,
+      "clip": "footage/v3-bird.webm",
+      "source": 21.511,
+      "rate": 1,
+      "zoom": 1.55,
+      "focus": [
+        0.5,
+        0.44
+      ]
+    },
+    {
+      "from": 45.833333333333336,
+      "to": 48.166666666666664,
+      "clip": "footage/v3-bird.webm",
+      "source": 102.21000000000001,
+      "rate": 1,
+      "zoom": 1.4,
+      "focus": [
+        0.62,
+        0.5
+      ]
+    },
+    {
+      "from": 48.166666666666664,
+      "to": 49.46666666666667,
+      "clip": "footage/v3-flower.webm",
+      "source": 7.465,
+      "rate": 1.746923076923072,
+      "zoom": 1.55,
+      "focus": [
+        0.5,
+        0.46
+      ]
+    },
+    {
+      "from": 49.46666666666667,
+      "to": 50.53333333333333,
+      "clip": "footage/v3-flower.webm",
+      "source": 12.392,
+      "rate": 1,
+      "zoom": 1.5,
+      "focus": [
+        0.5,
+        0.43
+      ]
+    },
+    {
+      "from": 50.53333333333333,
+      "to": 52.733333333333334,
+      "clip": "footage/v3-flower.webm",
+      "source": 14.896,
+      "rate": 1,
+      "zoom": 1.75,
+      "focus": [
+        0.5,
+        0.49
+      ]
+    },
+    {
+      "from": 52.733333333333334,
+      "to": 54.53333333333333,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 5.538,
+      "rate": 1,
+      "zoom": 1.7,
+      "focus": [
+        0.5,
+        0.44
+      ],
+      "label": "INK · original vector strokes"
+    },
+    {
+      "from": 54.53333333333333,
+      "to": 56.36666666666667,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 11.495,
+      "rate": 1,
+      "zoom": 1.7,
+      "focus": [
+        0.5,
+        0.49
+      ],
+      "label": "UNDERSTAND · support / rod / bob"
+    },
+    {
+      "from": 56.36666666666667,
+      "to": 58.166666666666664,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 11.795,
+      "rate": 0.6,
+      "zoom": 1.55,
+      "focus": [
+        0.5,
+        0.49
+      ],
+      "label": "PROGRAM · bound to original stroke IDs"
+    },
+    {
+      "from": 58.166666666666664,
+      "to": 60,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 16.375999999999998,
+      "rate": 1.2,
+      "zoom": 1.7,
+      "focus": [
+        0.5,
+        0.49
+      ],
+      "label": "MOVE · deterministic runtime"
+    },
+    {
+      "from": 60,
+      "to": 61.833333333333336,
+      "clip": "footage/inkmind-action-models.webm",
+      "source": 0.2,
+      "rate": 1,
+      "zoom": 1.4,
+      "focus": [
+        0.5,
+        0.42
+      ]
+    },
+    {
+      "from": 61.833333333333336,
+      "to": 63.63333333333333,
+      "clip": "footage/inkmind-action-models.webm",
+      "source": 1.1,
+      "rate": 1,
+      "zoom": 1.4,
+      "focus": [
+        0.5,
+        0.42
+      ]
+    },
+    {
+      "from": 63.63333333333333,
+      "to": 65.46666666666667,
+      "clip": "footage/v3-billing.webm",
+      "source": 4.177,
+      "rate": 0.47509090909090873,
+      "zoom": 1.48,
+      "focus": [
+        0.5,
+        0.58
+      ]
+    },
+    {
+      "from": 65.46666666666667,
+      "to": 68.16666666666667,
+      "clip": "footage/v3-billing.webm",
+      "source": 6.048,
+      "rate": 0.9459259259259251,
+      "zoom": 1.25,
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "label": "RevenueCat Test Store · no real charge"
+    },
+    {
+      "from": 68.16666666666667,
+      "to": 70.9,
+      "clip": "footage/v3-billing.webm",
+      "source": 8.602,
+      "rate": 0.38,
+      "zoom": 1.45,
+      "focus": [
+        0.5,
+        0.65
+      ],
+      "label": "Subscriptions powered by RevenueCat"
+    },
+    {
+      "from": 70.9,
+      "to": 71.63333333333334,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 11.395,
+      "rate": 1.1,
+      "zoom": 1.5,
+      "focus": [
+        0.5,
+        0.53
+      ]
+    },
+    {
+      "from": 71.63333333333334,
+      "to": 72.36666666666666,
+      "clip": "footage/v3-pendulum.webm",
+      "source": 15.776,
+      "rate": 1.1,
+      "zoom": 1.5,
+      "focus": [
+        0.5,
+        0.53
+      ]
+    },
+    {
+      "from": 72.36666666666666,
+      "to": 73.1,
+      "clip": "footage/v3-debug.webm",
+      "source": 12.863000000000001,
+      "rate": 1.1,
+      "zoom": 1.7,
+      "focus": [
+        0.49,
+        0.65
+      ]
+    },
+    {
+      "from": 73.1,
+      "to": 73.83333333333333,
+      "clip": "footage/v3-debug.webm",
+      "source": 14.063,
+      "rate": 1.1,
+      "zoom": 1.7,
+      "focus": [
+        0.49,
+        0.65
+      ]
+    },
+    {
+      "from": 73.83333333333333,
+      "to": 74.53333333333333,
+      "clip": "footage/v3-debug.webm",
+      "source": 14.963000000000001,
+      "rate": 1.1,
+      "zoom": 1.7,
+      "focus": [
+        0.49,
+        0.65
+      ]
+    },
+    {
+      "from": 74.53333333333333,
+      "to": 75.26666666666667,
+      "clip": "footage/v3-graph.webm",
+      "source": 11.803,
+      "rate": 1.1,
+      "zoom": 1.5,
+      "focus": [
+        0.5,
+        0.53
+      ]
+    },
+    {
+      "from": 75.26666666666667,
+      "to": 76,
+      "clip": "footage/v3-graph.webm",
+      "source": 12.479000000000001,
+      "rate": 1.1,
+      "zoom": 1.5,
+      "focus": [
+        0.5,
+        0.53
+      ]
+    },
+    {
+      "from": 76,
+      "to": 76.73333333333333,
+      "clip": "footage/v3-bird.webm",
+      "source": 103.06,
+      "rate": 1.1,
+      "zoom": 1.5,
+      "focus": [
+        0.6,
+        0.5
+      ]
+    },
+    {
+      "from": 76.73333333333333,
+      "to": 77.46666666666667,
+      "clip": "footage/v3-flower.webm",
+      "source": 16.496000000000002,
+      "rate": 1.1,
+      "zoom": 1.5,
+      "focus": [
+        0.5,
+        0.53
+      ]
+    },
+    {
+      "from": 77.46666666666667,
+      "to": 78.16666666666667,
+      "clip": "footage/v3-projectile.webm",
+      "source": 12.28,
+      "rate": 1.1,
+      "zoom": 1.5,
+      "focus": [
+        0.5,
+        0.53
+      ]
+    }
+  ],
+  "hits": [
+    {
+      "text": "DRAW IT.",
+      "from": 0,
+      "to": 0.6
+    },
+    {
+      "text": "MOVE IT.",
+      "from": 6.4,
+      "to": 7.2
+    },
+    {
+      "text": "CHANGE THE RULES.",
+      "from": 12.066666666666666,
+      "to": 12.866666666666667
+    },
+    {
+      "text": "DEBUG YOUR THINKING.",
+      "from": 27.266666666666666,
+      "to": 28.066666666666666
+    },
+    {
+      "text": "TOUCH THE EQUATION.",
+      "from": 35.46666666666667,
+      "to": 36.266666666666666
+    },
+    {
+      "text": "YOUR INK. STILL YOUR INK.",
+      "from": 50.53333333333333,
+      "to": 51.333333333333336
+    },
+    {
+      "text": "YOUR MODEL. YOUR DEVICE.",
+      "from": 60,
+      "to": 60.8
+    },
+    {
+      "text": "A REAL PRODUCT.",
+      "from": 68.16666666666667,
+      "to": 68.96666666666667
+    },
+    {
+      "text": "DRAW.",
+      "from": 70.9,
+      "to": 71.5
+    },
+    {
+      "text": "THINK.",
+      "from": 73.26666666666667,
+      "to": 73.86666666666666
+    },
+    {
+      "text": "RUN.",
+      "from": 75.83333333333333,
+      "to": 76.43333333333334
+    }
+  ],
+  "cues": [
+    {
+      "at": 0.6,
+      "kind": "select"
+    },
+    {
+      "at": 5.566666666666666,
+      "kind": "click"
+    },
+    {
+      "at": 6.4,
+      "kind": "activate"
+    },
+    {
+      "at": 9.533333333333333,
+      "kind": "lift"
+    },
+    {
+      "at": 11.833333333333334,
+      "kind": "drop"
+    },
+    {
+      "at": 11.933333333333334,
+      "kind": "gravity"
+    },
+    {
+      "at": 20,
+      "kind": "click"
+    },
+    {
+      "at": 20,
+      "kind": "rewind"
+    },
+    {
+      "at": 22.733333333333334,
+      "kind": "stop"
+    },
+    {
+      "at": 24.533333333333335,
+      "kind": "branch"
+    },
+    {
+      "at": 34.166666666666664,
+      "kind": "unfold"
+    },
+    {
+      "at": 35.46666666666667,
+      "kind": "slider"
+    },
+    {
+      "at": 40.53333333333333,
+      "kind": "unfold"
+    },
+    {
+      "at": 45.833333333333336,
+      "kind": "air"
+    },
+    {
+      "at": 78.16666666666667,
+      "kind": "logo"
+    }
+  ],
+  "program": "  const gravity = state(9.81);\n  const part_0 = ink.stroke(\"1790614268835000_4375389\", {pivotX:340,pivotY:235});\n  const part_1 = ink.stroke(\"1790614268835000_10927360\", {pivotX:340,pivotY:235});\n    part_0.rotation = Math.sin(time * speed * Math.sqrt(gravity / 9.81)) * 0.95;\n    part_1.rotation = Math.sin(time * speed * Math.sqrt(gravity / 9.81)) * 0.95;"
+}

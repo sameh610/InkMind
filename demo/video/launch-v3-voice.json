@@ -1,0 +1,104 @@
+{
+  "voice": "Charlie",
+  "take": 2,
+  "cues": [
+    {
+      "from": 0.65,
+      "to": 1.5,
+      "text": "Select your ink.",
+      "sourceFrom": 0,
+      "sourceTo": 0.88
+    },
+    {
+      "from": 3.65,
+      "to": 4.54,
+      "text": "Tell it how to move.",
+      "sourceFrom": 1.29,
+      "sourceTo": 2.24
+    },
+    {
+      "from": 6.45,
+      "to": 8.01,
+      "text": "The original strokes come alive.",
+      "sourceFrom": 2.94,
+      "sourceTo": 4.56
+    },
+    {
+      "from": 11.9,
+      "to": 13.14,
+      "text": "Drop in Moon gravity.",
+      "sourceFrom": 5.260000000000001,
+      "sourceTo": 6.56
+    },
+    {
+      "from": 20.02,
+      "to": 21.23,
+      "text": "Rewind your reasoning.",
+      "sourceFrom": 7.28,
+      "sourceTo": 8.549999999999999
+    },
+    {
+      "from": 22.75,
+      "to": 24.2,
+      "text": "Find the first wrong step.",
+      "sourceFrom": 9.04,
+      "sourceTo": 10.549999999999999
+    },
+    {
+      "from": 24.58,
+      "to": 25.54,
+      "text": "Draw a better branch.",
+      "sourceFrom": 11.19,
+      "sourceTo": 12.209999999999999
+    },
+    {
+      "from": 34.25,
+      "to": 36.81,
+      "text": "Turn an equation into something you can touch.",
+      "sourceFrom": 12.75,
+      "sourceTo": 15.37
+    },
+    {
+      "from": 45.95,
+      "to": 47.06,
+      "text": "Let your sketches move.",
+      "sourceFrom": 15.91,
+      "sourceTo": 17.080000000000002
+    },
+    {
+      "from": 53,
+      "to": 53.65,
+      "text": "Real ink.",
+      "sourceFrom": 17.810000000000002,
+      "sourceTo": 18.520000000000003
+    },
+    {
+      "from": 56.45,
+      "to": 57.22,
+      "text": "Real code.",
+      "sourceFrom": 19.0,
+      "sourceTo": 19.830000000000002
+    },
+    {
+      "from": 60.15,
+      "to": 60.66,
+      "text": "Your model.",
+      "sourceFrom": 20.310000000000002,
+      "sourceTo": 20.880000000000003
+    },
+    {
+      "from": 78.3,
+      "to": 78.91,
+      "text": "InkMind.",
+      "sourceFrom": 21.39,
+      "sourceTo": 22.060000000000002
+    },
+    {
+      "from": 79.35,
+      "to": 80.37,
+      "text": "Paper you can think with.",
+      "sourceFrom": 22.490000000000002,
+      "sourceTo": 23.57
+    }
+  ]
+}

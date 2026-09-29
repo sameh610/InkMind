@@ -1,0 +1,35 @@
+{
+  "marks": [
+    {
+      "name": "bird-page",
+      "seconds": 4.63,
+      "detail": "Original vector bird visible on fourth demo page"
+    },
+    {
+      "name": "bird-selected",
+      "seconds": 7.08,
+      "detail": "true"
+    },
+    {
+      "name": "instruction",
+      "seconds": 7.55,
+      "detail": "Fly across, turn back, original strokes, flap wings"
+    },
+    {
+      "name": "animate-execute",
+      "seconds": 7.75,
+      "detail": "Animate Ink submitted through the real app"
+    },
+    {
+      "name": "bird-ready",
+      "seconds": 55.99,
+      "detail": "Original selected bird got playable motion"
+    },
+    {
+      "name": "bird-takeoff",
+      "seconds": 56.35,
+      "detail": "Bird motion playback started"
+    }
+  ],
+  "errors": []
+}

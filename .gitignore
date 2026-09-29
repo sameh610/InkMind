@@ -1,0 +1,46 @@
+.dart_tool/
+.flutter-plugins*
+build/
+.tooling/
+.idea/
+*.iml
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+key.properties
+ios/Runner/Secrets*
+android/local.properties
+*.log
+node_modules/
+
+# Generated Flutter and platform files
+.packages
+.pub-cache/
+coverage/
+ios/Pods/
+ios/.symlinks/
+android/.gradle/
+android/app/build/
+
+# Local AI downloads, runners, and browser caches
+models/
+model-cache/
+native-runner*.log
+*.onnx
+*.gguf
+*.safetensors
+
+# Generated demo renders and review captures
+demo/video/out/
+demo/video/.cache/
+demo/video/capture-temp/
+demo/video/capture-*/
+demo/video/launch-v3/
+demo/video/action-*-temp/
+demo/video/public/audio/
+demo/video/public/footage/inkmind-action-*.webm
+video-review/
+visual-review/
+edge-*.png

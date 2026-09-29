@@ -1,0 +1,40 @@
+{
+  "output": "C:\\Hackathon inkmind\\demo\\video\\public\\footage\\inkmind-action-models.webm",
+  "actionStart": 5.143,
+  "actionEnd": 7.794,
+  "marks": [
+    {
+      "name": "settings-open",
+      "sourceSeconds": 4.44,
+      "detail": "Settings & AI models dialog opened"
+    },
+    {
+      "name": "automatic-visible",
+      "sourceSeconds": 5.14,
+      "detail": "Close settings Models Use Auto Use model Use model Use model Spark-X2.5 1.7B Lite · litert · compatible backend not installed · Quant: Auto · Build unavailable Spark-X2.5 4B Smart · litert · compatible backend not installed · Quant: Auto · Build unavailable Ternary Bonsai 2 27B Ultra · gguf · compatible backend not installed · Quant: Auto · Build unavailable Choose quantization Quantization Auto · Q4F16 Auto chooses the best supported quant for this device. Manual choices apply when the selected runtime provides that quant."
+    },
+    {
+      "name": "qwen-selected",
+      "sourceSeconds": 5.67,
+      "detail": "Clicked supported Qwen 2.5 Coder 0.5B model preference; no model inference or download started"
+    },
+    {
+      "name": "automatic-restored",
+      "sourceSeconds": 6.59,
+      "detail": "Clicked Automatic; model preference and Auto quantization restored"
+    },
+    {
+      "name": "verified",
+      "sourceSeconds": 7.79,
+      "detail": "Automatic card visibly resolves to Qwen 2.5 Coder 0.5B · Q4F16 · DirectML; source screenshot retained for visual review. Close settings Models Use Auto Use model Use model Use model Spark-X2.5 1.7B Lite · litert · compatible backend not installed · Quant: Auto · Build unavailable Spark-X2.5 4B Smart · litert · compatible backend not installed · Quant: Auto · Build unavailable Ternary Bonsai 2 27B Ultra · gguf · compat"
+    },
+    {
+      "name": "trimmed",
+      "sourceSeconds": 11.32,
+      "detail": "4.923–8.054 from the actual Edge recording"
+    }
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (File not found)"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "output": "C:\\Hackathon inkmind\\demo\\video\\public\\footage\\inkmind-action-visual.webm",
+  "marks": [
+    {
+      "name": "demo-open",
+      "seconds": 3.38,
+      "detail": "Prepared InkMind Demo notebook opened"
+    },
+    {
+      "name": "graph-before-selection",
+      "seconds": 4.13,
+      "detail": "Next page Back to library Previous page Next page Add page Page overview Notebook settings 03 / INTERACTIVE MATH · Select the equation, then New Visual. 3x^2 - 1 = y Keep the coefficient and constant. Explore the curve. Pen Pencil Highlighter Eraser Lasso / select Pan Ink color Stroke width Add text Add InkMatter modifier Gesture mode Explain Choose how AI should make it alive Make Alive Debug Create quiz More study actions Study Zoom out Fit page width Zoom in"
+    },
+    {
+      "name": "equation-selected",
+      "seconds": 6.4,
+      "detail": "selected=true; plore the curve.\nPen\nPencil\nHighlighter\nEraser\nLasso / select\nPan\nInk color\nStroke width\nAdd text\nAdd InkMatter modifier\nGesture mode\nSelection options\nExplain\nChoose how AI should make it alive Make Alive\nDebug\nCreate quiz\nMore study actions Study\nZoom out\nFit page width\nZoom in"
+    },
+    {
+      "name": "graph-selected",
+      "seconds": 6.91,
+      "detail": "Back to library Previous page Next page Add page Page overview Notebook settings 03 / INTERACTIVE MATH · Select the equation, then New Visual. Move 3x^2 - 1 = y Keep the coefficient and constant. Explore the curve. Pen Pencil Highlighter Eraser Lasso / select Pan Ink color Stroke width Add text Add InkMatter modifier Gesture mode Selection options Explain Choose how AI should make it alive Make Alive Debug Create quiz More study actions Study Zoom out Fit page width Zoom in"
+    },
+    {
+      "name": "visual-instruction",
+      "seconds": 7.91,
+      "detail": "Make an interactive graph of this exact equation. Keep the coefficient 3 and constant -1. Give me a slider for the x squared coefficient so the curve can flip."
+    },
+    {
+      "name": "visual-generate",
+      "seconds": 8.75,
+      "detail": "New Visual submitted from the live UI"
+    },
+    {
+      "name": "graph-ready",
+      "seconds": 9.31,
+      "detail": "[{\"label\":null,\"value\":\"1\",\"text\":\"80%\",\"rect\":[891.2106323242188,590.9199829101562,43.52001953125,39.893310546875]},{\"label\":null,\"value\":\"1\",\"text\":\"50%\",\"rect\":[770.9866333007812,658.0133056640625,43.52001953125,39.893310546875]},{\"label\":null,\"value\":\"1\",\"text\":\"42%\",\"rect\":[737.591064453125,725.1066284179688,43.52001953125,39.893310546875]}]"
+    },
+    {
+      "name": "graph-initial",
+      "seconds": 9.34,
+      "detail": "Back to library Undo Previous page Next page Add page Page overview Notebook settings 03 / INTERACTIVE MATH · Select the equation, then New Visual. 3x^2 - 1 = y Move Pen Pencil Highlighter Eraser Lasso / select Pan Ink color Stroke width Add text Add InkMatter modifier Gesture mode Selection options VIEW SOURCE y = 3x² − 1 Drag the coefficients to explore this equation. x² coefficient 3.0 x coefficient 0.0 constant -1.0 Keep the coefficient and constant. Explore the curve. Explain Choose how AI should make it alive Make Alive Debug Create quiz More study actions Study Zoom out Fit page width Zoom in"
+    },
+    {
+      "name": "graph-slider-drag",
+      "seconds": 12.77,
+      "detail": "14%"
+    },
+    {
+      "name": "graph-changed",
+      "seconds": 13.29,
+      "detail": "Back to library Undo Previous page Next page Add page Page overview Notebook settings 03 / INTERACTIVE MATH · Select the equation, then New Visual. 3x^2 - 1 = y Move Pen Pencil Highlighter Eraser Lasso / select Pan Ink color Stroke width Add text Add InkMatter modifier Gesture mode Selection options VIEW SOURCE y = 3x² − 1 Drag the coefficients to explore this equation. x² coefficient -3.6 x coefficient 0.0 constant -1.0 Keep the coefficient and constant. Explore the curve. Explain Choose how AI should make it alive Make Alive Debug Create quiz More study actions Study Zoom out Fit page width Zoom in"
+    },
+    {
+      "name": "graph-verified",
+      "seconds": 13.84,
+      "detail": "Exact y = 3x² − 1 shown and coefficient slider changed"
+    }
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (File not found)"
+  ]
+}

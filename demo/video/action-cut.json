@@ -1,0 +1,659 @@
+{
+  "version": 2,
+  "duration": 78,
+  "shots": [
+    {
+      "from": 0,
+      "to": 0.94,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 1.55,
+      "rate": 1,
+      "zoom": 1.85,
+      "focus": [
+        0.5,
+        0.42
+      ]
+    },
+    {
+      "from": 0.94,
+      "to": 2.82,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 2.58,
+      "rate": 1.35,
+      "zoom": 1.65,
+      "focus": [
+        0.5,
+        0.43
+      ]
+    },
+    {
+      "from": 2.82,
+      "to": 3.75,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 5.15,
+      "rate": 1,
+      "zoom": 1.42,
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "label": "3 original strokes selected"
+    },
+    {
+      "from": 3.75,
+      "to": 4.69,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 6.6,
+      "rate": 1,
+      "zoom": 1.13,
+      "focus": [
+        0.5,
+        0.52
+      ]
+    },
+    {
+      "from": 4.69,
+      "to": 5.63,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 11.08,
+      "rate": 1,
+      "zoom": 1.52,
+      "focus": [
+        0.5,
+        0.51
+      ]
+    },
+    {
+      "from": 5.63,
+      "to": 6.56,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 12.06,
+      "rate": 1,
+      "zoom": 1.4,
+      "focus": [
+        0.5,
+        0.43
+      ]
+    },
+    {
+      "from": 6.56,
+      "to": 8.44,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 119.86,
+      "rate": 1,
+      "zoom": 1.7,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "from": 8.44,
+      "to": 9.38,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 122.15,
+      "rate": 1,
+      "zoom": 1.44,
+      "focus": [
+        0.5,
+        0.59
+      ]
+    },
+    {
+      "from": 9.38,
+      "to": 10.31,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 123.15,
+      "rate": 1,
+      "zoom": 1.32,
+      "focus": [
+        0.46,
+        0.58
+      ]
+    },
+    {
+      "from": 10.31,
+      "to": 12.66,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 124.05,
+      "rate": 1.27,
+      "zoom": 1.27,
+      "focus": [
+        0.5,
+        0.55
+      ]
+    },
+    {
+      "from": 12.66,
+      "to": 13.59,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 127,
+      "rate": 1,
+      "zoom": 1.3,
+      "focus": [
+        0.5,
+        0.57
+      ]
+    },
+    {
+      "from": 13.59,
+      "to": 15,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 127.93,
+      "rate": 1,
+      "zoom": 1.23,
+      "focus": [
+        0.5,
+        0.59
+      ],
+      "label": "g = 1.62 m/s²"
+    },
+    {
+      "from": 15,
+      "to": 16.88,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 129.4,
+      "rate": 1,
+      "zoom": 1.3,
+      "focus": [
+        0.5,
+        0.54
+      ]
+    },
+    {
+      "from": 16.88,
+      "to": 18.28,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 3.3,
+      "rate": 1,
+      "zoom": 1.6,
+      "focus": [
+        0.43,
+        0.33
+      ]
+    },
+    {
+      "from": 18.28,
+      "to": 20.63,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 4.48,
+      "rate": 1.2,
+      "zoom": 1.55,
+      "focus": [
+        0.46,
+        0.37
+      ]
+    },
+    {
+      "from": 20.63,
+      "to": 21.56,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 7.14,
+      "rate": 1,
+      "zoom": 1.13,
+      "focus": [
+        0.51,
+        0.55
+      ]
+    },
+    {
+      "from": 21.56,
+      "to": 22.5,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 156.05,
+      "rate": 0.9,
+      "zoom": 1.3,
+      "focus": [
+        0.5,
+        0.56
+      ]
+    },
+    {
+      "from": 22.5,
+      "to": 24.38,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 156.45,
+      "rate": 0.74,
+      "zoom": 1.45,
+      "focus": [
+        0.5,
+        0.57
+      ]
+    },
+    {
+      "from": 24.38,
+      "to": 26.25,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 157.47,
+      "rate": 0.78,
+      "zoom": 1.35,
+      "focus": [
+        0.5,
+        0.56
+      ]
+    },
+    {
+      "from": 26.25,
+      "to": 27.19,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 159.16,
+      "rate": 1,
+      "zoom": 1.3,
+      "focus": [
+        0.5,
+        0.56
+      ],
+      "label": "first divergence · step 2"
+    },
+    {
+      "from": 27.19,
+      "to": 28.13,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 3.9,
+      "rate": 1,
+      "zoom": 1.64,
+      "focus": [
+        0.46,
+        0.36
+      ]
+    },
+    {
+      "from": 28.13,
+      "to": 30,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 4.4,
+      "rate": 1.18,
+      "zoom": 1.5,
+      "focus": [
+        0.47,
+        0.39
+      ]
+    },
+    {
+      "from": 30,
+      "to": 30.94,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 6.4,
+      "rate": 1,
+      "zoom": 1.48,
+      "focus": [
+        0.47,
+        0.39
+      ]
+    },
+    {
+      "from": 30.94,
+      "to": 31.88,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 7,
+      "rate": 1,
+      "zoom": 1.13,
+      "focus": [
+        0.51,
+        0.55
+      ]
+    },
+    {
+      "from": 31.88,
+      "to": 32.81,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 7.9,
+      "rate": 1,
+      "zoom": 1.22,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "from": 32.81,
+      "to": 33.75,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 8.75,
+      "rate": 1,
+      "zoom": 1.28,
+      "focus": [
+        0.5,
+        0.51
+      ]
+    },
+    {
+      "from": 33.75,
+      "to": 35.63,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 9.37,
+      "rate": 1.48,
+      "zoom": 1.38,
+      "focus": [
+        0.5,
+        0.56
+      ]
+    },
+    {
+      "from": 35.63,
+      "to": 36.56,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 12.18,
+      "rate": 1.25,
+      "zoom": 1.38,
+      "focus": [
+        0.5,
+        0.56
+      ]
+    },
+    {
+      "from": 36.56,
+      "to": 38.44,
+      "clip": "footage/inkmind-action-bird.webm",
+      "source": 4.4,
+      "rate": 1.12,
+      "zoom": 1.7,
+      "focus": [
+        0.49,
+        0.43
+      ]
+    },
+    {
+      "from": 38.44,
+      "to": 40.31,
+      "clip": "footage/inkmind-action-bird.webm",
+      "source": 6,
+      "rate": 1.05,
+      "zoom": 1.65,
+      "focus": [
+        0.5,
+        0.48
+      ]
+    },
+    {
+      "from": 40.31,
+      "to": 41.25,
+      "clip": "footage/inkmind-action-bird.webm",
+      "source": 7.28,
+      "rate": 1,
+      "zoom": 1.4,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "from": 41.25,
+      "to": 43.13,
+      "clip": "footage/inkmind-action-bird.webm",
+      "source": 55.92,
+      "rate": 1,
+      "zoom": 1.42,
+      "focus": [
+        0.69,
+        0.5
+      ]
+    },
+    {
+      "from": 43.13,
+      "to": 45,
+      "clip": "footage/inkmind-action-bird.webm",
+      "source": 57.45,
+      "rate": 1,
+      "zoom": 1.39,
+      "focus": [
+        0.68,
+        0.5
+      ]
+    },
+    {
+      "from": 45,
+      "to": 46.88,
+      "clip": "footage/inkmind-action-bird.webm",
+      "source": 59.3,
+      "rate": 1,
+      "zoom": 1.39,
+      "focus": [
+        0.56,
+        0.5
+      ]
+    },
+    {
+      "from": 46.88,
+      "to": 48.75,
+      "clip": "footage/inkmind-action-bird.webm",
+      "source": 58.5,
+      "rate": 1,
+      "zoom": 1.36,
+      "focus": [
+        0.56,
+        0.5
+      ]
+    },
+    {
+      "from": 48.75,
+      "to": 50.63,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 11.45,
+      "rate": 1.1,
+      "zoom": 1.42,
+      "focus": [
+        0.5,
+        0.56
+      ]
+    },
+    {
+      "from": 50.63,
+      "to": 52.5,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 126.6,
+      "rate": 1,
+      "zoom": 1.32,
+      "focus": [
+        0.5,
+        0.56
+      ]
+    },
+    {
+      "from": 52.5,
+      "to": 54.38,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 157.48,
+      "rate": 0.8,
+      "zoom": 1.35,
+      "focus": [
+        0.5,
+        0.56
+      ]
+    },
+    {
+      "from": 54.38,
+      "to": 56.25,
+      "clip": "footage/inkmind-action-code.webm",
+      "source": 2.3,
+      "rate": 1,
+      "zoom": 1.55,
+      "focus": [
+        0.5,
+        0.54
+      ]
+    },
+    {
+      "from": 56.25,
+      "to": 58.13,
+      "clip": "footage/inkmind-action-code.webm",
+      "source": 3,
+      "rate": 1,
+      "zoom": 1.48,
+      "focus": [
+        0.55,
+        0.5
+      ]
+    },
+    {
+      "from": 58.13,
+      "to": 60,
+      "clip": "footage/inkmind-action-code.webm",
+      "source": 3.9,
+      "rate": 1,
+      "zoom": 1.8,
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "label": "InkScript · original stroke IDs"
+    },
+    {
+      "from": 60,
+      "to": 61.88,
+      "clip": "footage/inkmind-action-models.webm",
+      "source": 0.05,
+      "rate": 1,
+      "zoom": 1.28,
+      "focus": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "from": 61.88,
+      "to": 63.75,
+      "clip": "footage/inkmind-action-models.webm",
+      "source": 1.1,
+      "rate": 0.75,
+      "zoom": 1.47,
+      "focus": [
+        0.51,
+        0.54
+      ],
+      "label": "Automatic · Q4F16 · DirectML"
+    },
+    {
+      "from": 63.75,
+      "to": 65.63,
+      "clip": "footage/inkmind-action-code.webm",
+      "source": 4.05,
+      "rate": 0.8,
+      "zoom": 1.76,
+      "focus": [
+        0.5,
+        0.55
+      ]
+    },
+    {
+      "from": 65.63,
+      "to": 66.56,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 120.35,
+      "rate": 1,
+      "zoom": 1.7,
+      "focus": [
+        0.5,
+        0.44
+      ]
+    },
+    {
+      "from": 66.56,
+      "to": 67.5,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 123.18,
+      "rate": 1,
+      "zoom": 1.58,
+      "focus": [
+        0.37,
+        0.7
+      ]
+    },
+    {
+      "from": 67.5,
+      "to": 68.44,
+      "clip": "footage/inkmind-action-ink.webm",
+      "source": 127.1,
+      "rate": 1,
+      "zoom": 1.65,
+      "focus": [
+        0.47,
+        0.7
+      ]
+    },
+    {
+      "from": 68.44,
+      "to": 69.38,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 157.2,
+      "rate": 1,
+      "zoom": 1.9,
+      "focus": [
+        0.5,
+        0.59
+      ]
+    },
+    {
+      "from": 69.38,
+      "to": 70.31,
+      "clip": "footage/inkmind-action-debug.webm",
+      "source": 158.6,
+      "rate": 1,
+      "zoom": 1.87,
+      "focus": [
+        0.5,
+        0.58
+      ]
+    },
+    {
+      "from": 70.31,
+      "to": 71.25,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 6.5,
+      "rate": 1,
+      "zoom": 1.54,
+      "focus": [
+        0.48,
+        0.4
+      ]
+    },
+    {
+      "from": 71.25,
+      "to": 72.19,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 9.2,
+      "rate": 1,
+      "zoom": 1.38,
+      "focus": [
+        0.5,
+        0.56
+      ]
+    },
+    {
+      "from": 72.19,
+      "to": 73.13,
+      "clip": "footage/inkmind-action-visual.webm",
+      "source": 12.55,
+      "rate": 1,
+      "zoom": 1.42,
+      "focus": [
+        0.5,
+        0.57
+      ]
+    },
+    {
+      "from": 73.13,
+      "to": 74.06,
+      "clip": "footage/inkmind-action-bird.webm",
+      "source": 58.9,
+      "rate": 1,
+      "zoom": 1.76,
+      "focus": [
+        0.57,
+        0.49
+      ]
+    },
+    {
+      "from": 74.06,
+      "to": 75,
+      "clip": "footage/inkmind-action-bird.webm",
+      "source": 60.3,
+      "rate": 1,
+      "zoom": 1.42,
+      "focus": [
+        0.56,
+        0.5
+      ]
+    }
+  ]
+}

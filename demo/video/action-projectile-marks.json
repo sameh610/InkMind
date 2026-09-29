@@ -1,0 +1,30 @@
+{
+  "marks": [
+    {
+      "name": "projectile-page",
+      "seconds": 4.47,
+      "detail": "Prepared fifth page shows the actual launch idea"
+    },
+    {
+      "name": "selected",
+      "seconds": 6.88,
+      "detail": "Selected the projectile idea with a real lasso"
+    },
+    {
+      "name": "instruction",
+      "seconds": 7.47,
+      "detail": "Exact 20 m/s, 45° projectile and live controls"
+    },
+    {
+      "name": "generate",
+      "seconds": 7.72,
+      "detail": "New Visual requested through the real app UI"
+    },
+    {
+      "name": "capture-error",
+      "seconds": 307.73,
+      "detail": "TimeoutError: locator.waitFor: Timeout 300000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('slider').first() to be visible\u001b[22m\n"
+    }
+  ],
+  "errors": []
+}

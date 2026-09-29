@@ -1,0 +1,32 @@
+name: inkmind
+description: Paper you can think with. A local-first computational notebook.
+publish_to: none
+version: 0.1.0+1
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  web: ^1.1.1
+  idb_shim: ^2.6.5
+  path_provider: ^2.1.5
+  purchases_flutter: ^10.10.0
+  purchases_ui_flutter: ^10.10.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+# These method-channel versions avoid native asset hooks with SDK paths
+# containing spaces on Windows. Revisit when the hook quoting bug is fixed.
+dependency_overrides:
+  path_provider_foundation: 2.4.2
+  path_provider_android: 2.2.19
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Lora
+      fonts:
+        - asset: assets/fonts/Lora.ttf
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat.ttf

@@ -1,0 +1,40 @@
+{
+  "marks": [
+    {
+      "name": "wrong-work",
+      "seconds": 3.89,
+      "detail": "Prepared math reads 3x + 5 = 20; 3x = 25; x = 8.33"
+    },
+    {
+      "name": "lasso-tool",
+      "seconds": 4.72,
+      "detail": "Selected the app Lasso / select tool"
+    },
+    {
+      "name": "selection",
+      "seconds": 6.08,
+      "detail": "selected=true; \nGesture mode\nSelection options\nExplain\nChoose how AI should make it alive Make Alive\nDebug\nCreate quiz\nMore study actions Study\nZoom out\nFit page width\nZoom in"
+    },
+    {
+      "name": "debug-trigger",
+      "seconds": 7.01,
+      "detail": "Clicked the visible Debug action"
+    },
+    {
+      "name": "debug-result",
+      "seconds": 156.66,
+      "detail": "App created a reasoning replay result from the selected work"
+    },
+    {
+      "name": "verification",
+      "seconds": 161.15,
+      "detail": "Expected correction text was not visible in the real app"
+    },
+    {
+      "name": "capture-error",
+      "seconds": 161.15,
+      "detail": "Error: InkDebug did not visibly show the expected correction."
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,66 @@
+{
+  "footagePath": "C:\\Hackathon inkmind\\demo\\video\\public\\footage\\inkmind-action-ink.webm",
+  "marks": [
+    {
+      "name": "pendulum-page",
+      "seconds": 1.43,
+      "detail": "InkMind Demo opened in Edge"
+    },
+    {
+      "name": "select-tool",
+      "seconds": 2.58,
+      "detail": "User chose Lasso / select"
+    },
+    {
+      "name": "selection",
+      "seconds": 5.15,
+      "detail": "Selection options appeared; three pendulum strokes highlighted"
+    },
+    {
+      "name": "animate-command",
+      "seconds": 6.88,
+      "detail": "User chose Animate my ink; motion instruction dialog opened"
+    },
+    {
+      "name": "instruction",
+      "seconds": 11.6,
+      "detail": "Swing like a pendulum; preserve original strokes; expose gravity"
+    },
+    {
+      "name": "animate-execute",
+      "seconds": 12.1,
+      "detail": "User submitted Animate Ink"
+    },
+    {
+      "name": "animate-ready",
+      "seconds": 119.91,
+      "detail": "Play motion appeared after real AI response"
+    },
+    {
+      "name": "first-swing",
+      "seconds": 121.07,
+      "detail": "Original selected stroke rig began moving after Play motion"
+    },
+    {
+      "name": "gravity-before",
+      "seconds": 122.78,
+      "detail": "49%"
+    },
+    {
+      "name": "moon-pickup",
+      "seconds": 123.18,
+      "detail": "User held the handwritten Moon modifier"
+    },
+    {
+      "name": "moon-drop",
+      "seconds": 127.65,
+      "detail": "User dropped Moon onto the moving original pendulum"
+    },
+    {
+      "name": "gravity-after",
+      "seconds": 127.95,
+      "detail": "8%"
+    }
+  ],
+  "errors": []
+}

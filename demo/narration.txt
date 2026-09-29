@@ -1,0 +1,11 @@
+Imagine a notebook where a drawing and the idea behind it can move together.
+
+This pendulum is ordinary vector ink. Animate Ink reads the selected strokes, identifies the object, and builds motion around the original drawing. The bob swings from its support; the marks stay recognizable. Then drop Moon onto the sketch to change gravity and slow the cycle.
+
+On the next page, InkDebug follows each line of a calculation. It stops at the first wrong step, shows the correction, and keeps the original work beside it.
+
+For a new visual, InkMind reads the selected equation and turns it into a graph with working controls. Here the coefficient is three, the x term is zero, and the constant is negative one. Change the coefficient and the curve responds.
+
+The page still belongs to your thinking. Keep the ink, the explanation, and the interactive result together. The settings panel shows the selected model, quantization, and compute backend. In this browser demo, Gemma is using its CPU compatibility path.
+
+InkMind. Paper you can think with.
