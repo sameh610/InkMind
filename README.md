@@ -12,11 +12,7 @@ Instead of moving your thinking into a chatbot, InkMind brings intelligence dire
 
 **See the interaction immediately:**
 
-<p align="center">
-  <a href="https://github.com/sameh610/InkMind/raw/main/demo/video/public/footage/inkmind-animate-ink-pendulum.mp4">
-    ▶ Watch Animate Ink demo
-  </a>
-</p>
+https://github.com/user-attachments/assets/cfeb89f4-903b-4cc6-9757-e7da34621928
 
 <p align="center">
   <img src="demo/audit/moon-drop-check.png" width="780" alt="InkMatter applies Moon gravity to a hand-drawn pendulum" />
