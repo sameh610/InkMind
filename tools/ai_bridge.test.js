@@ -6,7 +6,7 @@ const source=readFileSync(new URL('../web/inkmind_ai.js',import.meta.url),'utf8'
 
 function bridge({native=true,fail=false}={}) {
   let workers=0;
-  const context={window:{},navigator:{},AbortController,setTimeout,clearTimeout,console,
+  const context={window:{},navigator:{},AbortController,setTimeout,clearTimeout,setInterval,clearInterval,console,
     fetch:async url=>url.endsWith('/health')
       ? {json:async()=>({ok:native})}
       : {ok:!fail,json:async()=>fail?{error:'Could not validate selected ink'}:{text:'Verified response',model:'Actual model',quant:'Q4',backend:'CPU'}},

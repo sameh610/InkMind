@@ -51,11 +51,12 @@ class _InkScriptPlaygroundState extends State<InkScriptPlayground> {
       final next = await compileInkScriptInBrowser(editor.text);
       if (mounted) setState(() => result = next);
     } catch (e) {
-      if (mounted)
+      if (mounted) {
         setState(() {
           result = null;
           error = e.toString();
         });
+      }
     } finally {
       if (mounted) setState(() => compiling = false);
     }
@@ -220,7 +221,7 @@ class _InkScriptPlaygroundState extends State<InkScriptPlayground> {
                         ],
                       ),
                     );
-                    if (wide)
+                    if (wide) {
                       return Row(
                         children: [
                           Expanded(child: codePane),
@@ -228,6 +229,7 @@ class _InkScriptPlaygroundState extends State<InkScriptPlayground> {
                           Expanded(child: resultPane),
                         ],
                       );
+                    }
                     return Column(
                       children: [
                         Expanded(child: codePane),

@@ -50,13 +50,18 @@ class _InkPrimaryButtonState extends State<InkPrimaryButton> {
             Icon(widget.icon, size: 16, color: Colors.white),
             const SizedBox(width: 8),
           ],
-          Text(
-            widget.label,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-              letterSpacing: -.1,
+          Flexible(
+            child: Text(
+              widget.label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                letterSpacing: -.1,
+              ),
             ),
           ),
         ],
@@ -262,7 +267,7 @@ class InkSettingsRow extends StatelessWidget {
                 ],
               ),
             ),
-            if (trailing != null) trailing!,
+            ?trailing,
           ],
         ),
       ),

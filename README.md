@@ -6,17 +6,17 @@
 
 **Paper you can think with.**
 
-InkMind is a local-first handwritten notebook where your ink can move, become interactive, and help you debug your reasoning with on-device AI.
+InkMind is a handwriting-first notebook where original strokes become interactive: Animate Ink brings drawings to life, InkDebug traces reasoning, and local AI can help directly on the page.
 
 Instead of moving your thinking into a chatbot, InkMind brings intelligence directly onto the page.
 
 **See the interaction immediately:**
 
-
 https://github.com/user-attachments/assets/cfeb89f4-903b-4cc6-9757-e7da34621928
 
-<img src="demo/audit/moon-drop-check.png" width="780" alt="InkMatter applies Moon gravity to a hand-drawn pendulum" />
-
+<p align="center">
+  <img src="demo/audit/moon-drop-check.png" width="780" alt="InkMatter applies Moon gravity to a hand-drawn pendulum" />
+</p>
 
 The original strokes stay on the page. A handwritten **Moon** modifier changes the pendulum's gravity, and the simulation runs on the ink itself.
 
@@ -27,7 +27,7 @@ The original strokes stay on the page. A handwritten **Moon** modifier changes t
 - **InkDebug** — rewind stroke history, stop at the first wrong transformation, and branch into a corrected path.
 - **New Visual** — turn an equation or diagram into a polished interactive visual using InkScript.
 - **Local AI** — route tasks to compatible browser or native models, with visible model and quantization selection.
-- **InkMind Pro** — unlock advanced AI, animation, InkCells, and subscription features through RevenueCat.
+- **InkMind Pro** — native RevenueCat entitlement and restore; an active entitlement removes the 25-action native AI limit. Web demo purchases only enable Pro for the current session.
 
 ### Explain and Create quiz
 
@@ -47,9 +47,9 @@ animate pendulum.swing(period: 2.4s)
 
 ## Local AI
 
-The browser can use the bundled worker and the optional local companion in `tools/native_ai_runner.mjs`. Automatic model selection chooses a compatible model and quantization for the device. The first use downloads model weights; later runs use the local cache.
+AI inference can run in the browser worker or the optional local companion in `tools/native_ai_runner.mjs`; notebook content is stored on the device. The first AI use downloads model weights (and the vision model when selected ink must be inspected); later runs use the local cache. Automatic model selection chooses a compatible model and quantization from an estimated device memory budget.
 
-Available catalog entries include Qwen 2.5 Coder, Gemma 4 E2B/E4B, Spark-X2.5, and Ternary Bonsai 2 27B. Runtime availability depends on the target device and backend.
+The model selector lists Qwen 2.5 Coder, Gemma 4 E2B/E4B, Spark-X2.5, and Ternary Bonsai 2 27B. This build runs Qwen and Gemma through Transformers.js; the Spark LiteRT and Bonsai GGUF runtimes are not bundled, so selecting those entries reports that the runtime is unavailable.
 
 ## Run it
 
@@ -71,13 +71,21 @@ node tools/native_ai_runner.mjs
 
 For Android, connect a device or start an emulator and run `flutter run -d <device-id>`. iOS builds require macOS, Xcode, and CocoaPods.
 
-RevenueCat uses demo billing by default. To enable the RevenueCat Test Store during development:
+RevenueCat uses an explicitly labeled demo purchase flow by default. Native builds can use the RevenueCat Test Store with a public Test Store SDK key. Configure the current offering with monthly and annual packages and the `inkmind_pro` entitlement (or pass `REVENUECAT_ENTITLEMENT` to use another entitlement):
 
 ```bash
 flutter run -d <device-id> \
   --dart-define=REVENUECAT_ENABLED=true \
   --dart-define=REVENUECAT_PUBLIC_KEY=test_JzFpbMzQLHIhMFJSQSAlsATUSRw
 ```
+
+RevenueCat handles native subscription purchases, customer entitlement updates, and restore. Demo purchases take no payment and do not contact RevenueCat. The web preview stays in demo billing mode.
+
+## Privacy and Shipaton
+
+InkMind is built for RevenueCat Shipaton 2026 — Next Gen. Notebook pages and preferences are saved locally (IndexedDB in the browser, app documents storage on native). AI runs through the selected local model when its runtime is available; model files are downloaded on first use. The optional companion listens only on loopback. There is no notebook cloud sync in this repository.
+
+The interface is designed for tablet-first handwriting and also supports phone and desktop layouts. The included demonstration was captured in a desktop browser; it is not presented as iPad footage.
 
 ## Devpost submission assets
 
@@ -87,8 +95,10 @@ The project icon is preserved at the required **1024×1024** size:
 
 The portrait screenshot below is a separate, device-frame-free **1179×2556** asset suitable for the Devpost screenshot requirement:
 
+`assets/devpost-inkmind-portrait-inkdebug.png`
+
 <p align="center">
-  <img width="1179" height="2556" alt="image" src="https://github.com/user-attachments/assets/f04cc08a-511f-4e59-b4ca-d2a0fd2ff601" />
+  <img src="assets/devpost-inkmind-portrait-inkdebug.png" width="390" alt="InkMind portrait showcase featuring InkDebug" />
 </p>
 
 ## Tests
@@ -116,4 +126,4 @@ ios/                    iOS platform project
 
 Licensed under the [Apache License 2.0](LICENSE).
 
-Third-party models and dependencies may have separate licenses.
+Bundled Lora and Caveat fonts include their OFL notices in `assets/fonts/`. Third-party models, model weights, and dependencies may have separate licenses.

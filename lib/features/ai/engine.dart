@@ -85,8 +85,9 @@ class VisualSpec {
   static VisualSpec? fromJson(Map<String, dynamic> json) {
     final style = json['style']?.toString().toLowerCase();
     if (style == null ||
-        (!styles.contains(style) && style != 'code' && style != 'ir'))
+        (!styles.contains(style) && style != 'code' && style != 'ir')) {
       return null;
+    }
     final spec = VisualSpec(
       style: style,
       title: json['title']?.toString().trim() ?? 'AI visual',
@@ -183,8 +184,9 @@ class ModelRouter {
        fallback = fallback ?? DemoModelEngine();
   Future<InkResponse> run(InkRequest r) async {
     if (requireAi) {
-      if (!smart.available)
+      if (!smart.available) {
         throw StateError('Enable Browser AI in Settings to use AI actions.');
+      }
       return smart.infer(r);
     }
     // Every action gets an AI attempt. The fast engine remains the validated

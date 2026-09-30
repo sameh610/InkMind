@@ -1,12 +1,11 @@
 {
-    "name": "inkmind",
-    "short_name": "inkmind",
+    "name": "InkMind",
+    "short_name": "InkMind",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#f2f1eb",
     "theme_color": "#365c4b",
     "description": "InkMind — Paper you can think with. A local-first computational notebook.",
-    "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {

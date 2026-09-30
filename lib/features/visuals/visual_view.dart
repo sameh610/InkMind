@@ -31,8 +31,9 @@ class _AiVisualViewState extends State<AiVisualView>
       duration: const Duration(seconds: 8),
     );
     if (widget.object.data['style'] != 'code' &&
-        widget.object.data['style'] != 'ir')
+        widget.object.data['style'] != 'ir') {
       clock.repeat();
+    }
   }
 
   @override

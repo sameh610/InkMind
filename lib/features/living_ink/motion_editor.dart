@@ -63,12 +63,13 @@ class _MotionEditorState extends State<MotionEditor> {
       widget.onApply(ir, result['source']?.toString() ?? editor.text, bindings);
       Navigator.pop(context);
     } catch (e) {
-      if (mounted)
+      if (mounted) {
         setState(
           () => error = e is FormatException
               ? e.message
               : 'Could not compile this edit. Please retry.',
         );
+      }
     } finally {
       if (mounted) setState(() => busy = false);
     }

@@ -96,8 +96,9 @@ class SettingsDialog extends StatelessWidget {
                               ),
                             ],
                             onChanged: (value) {
-                              if (value != null)
+                              if (value != null) {
                                 c.updatePreferences('aiPerformance', value);
+                              }
                             },
                           ),
                         ),
@@ -432,9 +433,8 @@ class _ModelRow extends StatelessWidget {
     required this.installed,
     this.onInstall,
     this.onSelect,
-    this.installLabel = 'Download',
     this.selectLabel = 'Select',
-  });
+  }) : installLabel = 'Download';
 
   @override
   Widget build(BuildContext context) {
@@ -477,7 +477,7 @@ class _ModelRow extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   [
-                    if (badge != null) badge!,
+                    ?badge,
                     detail,
                     if (size.isNotEmpty) size,
                   ].join(' · '),

@@ -166,8 +166,9 @@ class _InkMotionLayerState extends State<InkMotionLayer>
           final value = (raw['value'] as num?)?.toDouble();
           if (name.isEmpty ||
               value == null ||
-              result.any((c) => c['name'] == name))
+              result.any((c) => c['name'] == name)) {
             continue;
+          }
           final key = name.toLowerCase();
           final min = key == 'gravity'
               ? 0.0
@@ -654,8 +655,9 @@ class _InkMotionPainter extends CustomPainter {
     if (ir['rig'] is Map) {
       final rig = Map<String, dynamic>.from(ir['rig'] as Map);
       for (final entry in controlValues.entries) {
-        if (entry.key == 'speed' || entry.key == 'gravity')
+        if (entry.key == 'speed' || entry.key == 'gravity') {
           rig[entry.key] = entry.value;
+        }
       }
       _paintRig(canvas, rig, painted);
       return;
@@ -687,8 +689,9 @@ class _InkMotionPainter extends CustomPainter {
     for (final raw in (ir['state'] as List? ?? []).whereType<Map>()) {
       final name = raw['name']?.toString();
       final value = raw['value'];
-      if (name != null && value is num && value.isFinite)
+      if (name != null && value is num && value.isFinite) {
         values[name] = controlValues[name] ?? value;
+      }
     }
     for (final entry in bindingIds.entries) {
       final ids = (entry.value as List? ?? []).whereType<String>().toSet();
@@ -723,8 +726,9 @@ class _InkMotionPainter extends CustomPainter {
         .toList();
     for (final stroke in page.strokes) {
       if (painted.contains(stroke.id) ||
-          !bindings.values.any((ids) => ids.contains(stroke.id)))
+          !bindings.values.any((ids) => ids.contains(stroke.id))) {
         continue;
+      }
       var dx = 0.0,
           dy = 0.0,
           bend = 0.0,
@@ -779,11 +783,12 @@ class _InkMotionPainter extends CustomPainter {
       canvas.rotate(angle);
       canvas.scale(sx, sy);
       canvas.translate(-pivot.dx, -pivot.dy);
-      if (opacity < 1)
+      if (opacity < 1) {
         canvas.saveLayer(
           stroke.bounds.inflate(12),
           Paint()..color = Colors.white.withValues(alpha: opacity),
         );
+      }
       final displayed = bend == 0 ? stroke : InkStroke(
         id: stroke.id, tool: stroke.tool, color: stroke.color, width: stroke.width, created: stroke.created,
         points: stroke.points.map((p) => InkPoint(

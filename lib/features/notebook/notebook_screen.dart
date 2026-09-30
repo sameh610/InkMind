@@ -57,8 +57,9 @@ bool isDirectionArrowOverlay(InkStroke stroke, Iterable<InkStroke> selection) {
   }
   if (!arrowLike) return false;
   for (final other in selection) {
-    if (other.id == stroke.id || !bounds.inflate(12).overlaps(other.bounds))
+    if (other.id == stroke.id || !bounds.inflate(12).overlaps(other.bounds)) {
       continue;
+    }
     for (final point in stroke.points) {
       if (other.points.any(
         (neighbor) =>
@@ -113,11 +114,12 @@ class _NotebookScreenState extends State<NotebookScreen> {
     final ids = movingStrokeIds(c.page);
     if (ids.isNotEmpty) {
       final strokes = c.page.strokes.where((s) => ids.contains(s.id)).toList();
-      if (strokes.isNotEmpty)
+      if (strokes.isNotEmpty) {
         focusInk(
           strokes.map((s) => s.bounds).reduce((a, b) => a.expandToInclude(b)),
           width: width,
         );
+      }
     }
   }
 
@@ -575,9 +577,10 @@ class _NotebookScreenState extends State<NotebookScreen> {
       final clipped = await recorder.endRecording().toImage(width, height);
       try {
         final png = await clipped.toByteData(format: ui.ImageByteFormat.png);
-        if (png != null)
+        if (png != null) {
           result['image'] =
               'data:image/png;base64,${base64Encode(png.buffer.asUint8List())}';
+        }
       } finally {
         clipped.dispose();
       }
@@ -642,8 +645,9 @@ class _NotebookScreenState extends State<NotebookScreen> {
         selection: selection,
       );
       if (!mounted || c.book?.id != bookId || c.page.id != pageId) return;
-      if (response.motion == null)
+      if (response.motion == null) {
         throw StateError('The model returned no motion plan.');
+      }
       final ir = response.motion!['ir'];
       final bindings = ir is Map
           ? bindInkAnimation(
@@ -658,15 +662,17 @@ class _NotebookScreenState extends State<NotebookScreen> {
           : (response.motion!['tracks'] as List)
                 .expand((t) => (t['ids'] as List).cast<String>())
                 .toList();
-      if (ids.isEmpty || ids.any((id) => !originals.containsKey(id)))
+      if (ids.isEmpty || ids.any((id) => !originals.containsKey(id))) {
         throw StateError('The motion plan references invalid strokes. Retry.');
+      }
       for (final id in originals.keys) {
         final current = c.page.strokes.where((s) => s.id == id).firstOrNull;
         if (current == null ||
-            base64Encode(StrokeCodec.encode(current)) != originals[id])
+            base64Encode(StrokeCodec.encode(current)) != originals[id]) {
           throw StateError(
             'Your ink changed during generation. Select it again.',
           );
+        }
       }
       c.checkpoint();
       if (arrowIds.isNotEmpty) {
@@ -693,10 +699,11 @@ class _NotebookScreenState extends State<NotebookScreen> {
       final arrowNote = arrowIds.isEmpty ? '' : ' · direction arrow removed';
       setState(() => status = '${response.engine}: ${response.text}$arrowNote');
     } catch (e) {
-      if (mounted)
+      if (mounted) {
         ScaffoldMessenger.of(
           context,
         ).showSnackBar(SnackBar(content: Text(e.toString())));
+      }
     } finally {
       finishWorking();
     }

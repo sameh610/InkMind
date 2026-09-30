@@ -153,13 +153,19 @@ void main() {
     final c = await start(tester, playground: true);
     c.goTo(1);
     await tester.pumpAndSettle();
-    await tester.tap(find.text('3x + 5 = 20\n3x = 25\nx = 8.33'));
+    // The example is real handwriting painted on the canvas, so select its
+    // recorded strokes and attach the transcription used by this offline test.
+    c.selectRect(const Rect.fromLTRB(80, 180, 650, 390));
+    c.associateLabel('3x + 5 = 20\n3x = 25\nx = 8.33');
     await tester.pump();
     await tester.tap(find.text('Debug'));
     await tester.pumpAndSettle();
     expect(find.byType(DebugView), findsOneWidget);
-    expect(find.text('x = 5'), findsOneWidget);
-    expect(find.text('First divergence · step 2'), findsOneWidget);
+    expect(c.page.objects.last.data['corrected'], contains('x = 5'));
+    expect(
+      find.bySemanticsLabel(RegExp(r'Recorded pen history, .*Corrected branch:.*x = 5')),
+      findsOneWidget,
+    );
     expect(tester.takeException(), isNull);
   });
   testWidgets('quiz generation answers all questions and retries', (
@@ -228,6 +234,7 @@ void main() {
     await tester.tap(find.text('Use model').first);
     await tester.pumpAndSettle();
     expect(c.preferences['aiModel'], 'qwen-2.5-coder-0.5b');
+    expect(tester.takeException(), isNull, reason: 'after selecting a model');
     await tester.scrollUntilVisible(
       find.text('Gemma 4 E2B'),
       260,
@@ -239,18 +246,22 @@ void main() {
           .first,
     );
     expect(find.text('Gemma 4 E2B'), findsOneWidget);
+    expect(tester.takeException(), isNull, reason: 'after browsing model list');
     await tester.tap(find.byTooltip('Close settings'));
     await tester.pumpAndSettle();
+    expect(tester.takeException(), isNull, reason: 'after closing settings');
     showPaywall(tester.element(find.text('New notebook').first), c);
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 500));
+    expect(tester.takeException(), isNull, reason: 'when opening paywall');
     expect(find.text('Make your\npaper think.'), findsOneWidget);
     await tester.tap(find.text('Continue with Annual'));
     await tester.pump();
+    expect(tester.takeException(), isNull, reason: 'after tapping annual plan');
     await tester.pump(const Duration(milliseconds: 500));
     expect(c.pro, true);
     expect(find.textContaining('No payment was taken'), findsOneWidget);
-    expect(tester.takeException(), isNull);
+    expect(tester.takeException(), isNull, reason: 'after enabling demo Pro');
   });
   testWidgets(
     'phone library notebook settings paywall have no layout exceptions',

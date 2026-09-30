@@ -8,14 +8,16 @@ Map<String, List<String>> bindInkAnimation(
   InkPage page,
   Set<String> selectedIds,
 ) {
-  if (ir['mode'] != 'animateInk')
+  if (ir['mode'] != 'animateInk') {
     throw const FormatException('Expected Animate Ink InkIR.');
+  }
   final available = page.strokes
       .where((s) => selectedIds.contains(s.id))
       .map((s) => s.id)
       .toList();
-  if (available.isEmpty)
+  if (available.isEmpty) {
     throw const FormatException('No selected ink to animate.');
+  }
   if (ir['rig'] is Map) {
     final rig = Map<String, dynamic>.from(ir['rig'] as Map);
     const kinds = {
@@ -159,8 +161,9 @@ Map<String, List<String>> bindInkAnimation(
   }
   if (resolved.isEmpty) throw const FormatException('No ink bindings found.');
   for (final raw in (ir['animations'] as List? ?? []).whereType<Map>()) {
-    if (!resolved.containsKey(raw['target']))
+    if (!resolved.containsKey(raw['target'])) {
       throw const FormatException('Animation has an unknown target.');
+    }
   }
   final values = <String, dynamic>{'time': 0.0};
   for (final state in states) {
@@ -198,10 +201,11 @@ Map<String, List<String>> bindInkAnimation(
     final matches = expected is num && actual is num
         ? (expected - actual).abs() < .001
         : expected == actual;
-    if (!matches)
+    if (!matches) {
       throw FormatException(
         'Animation changes original ink at time 0: $property.',
       );
+    }
   }
   return resolved;
 }

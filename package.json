@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:ai": "node tools/generate_model_catalog.mjs && esbuild tools/ai_worker.js --bundle --format=esm --platform=browser --target=es2022 --outfile=web/ai_worker.bundle.js",
+    "build:ai": "node tools/generate_model_catalog.mjs && esbuild tools/ai_worker.js --bundle --format=esm --platform=browser --target=es2022 --outfile=web/ai_worker.bundle.js && node tools/sanitize_ai_bundle.cjs",
     "native:ai": "node tools/native_ai_runner.mjs",
     "web:edge": "powershell -ExecutionPolicy Bypass -File tools/run_web_edge.ps1"
   },

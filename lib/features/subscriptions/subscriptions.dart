@@ -87,10 +87,11 @@ class RevenueCatSubscriptionService implements SubscriptionService {
     }
     final result = await Purchases.purchase(PurchaseParams.package(package));
     _update(result.customerInfo);
-    if (!_pro)
+    if (!_pro) {
       throw StateError(
         'Purchase completed, but the $entitlementId entitlement is not active. Check the product entitlement in RevenueCat.',
       );
+    }
   }
 
   @override

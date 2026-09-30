@@ -10,8 +10,9 @@ InkResponse decodeAiResponse(
   String? context,
 }) {
   final text = output.trim();
-  if (text.isEmpty)
+  if (text.isEmpty) {
     throw const FormatException('AI returned an empty answer. Retry.');
+  }
   if (action == InkAction.createVisual || action == InkAction.makeAlive) {
     final payload = _compiledInkScript(text, 'visual');
     if (payload != null) {
@@ -85,18 +86,21 @@ InkResponse decodeAiResponse(
       .replaceFirst(RegExp(r'^```(?:json)?\s*'), '')
       .replaceFirst(RegExp(r'\s*```$'), '');
   final decoded = jsonDecode(raw);
-  if (decoded is! Map<String, dynamic>)
+  if (decoded is! Map<String, dynamic>) {
     throw const FormatException('Expected a structured AI response.');
+  }
   final j = decoded;
   String str(dynamic v, [int max = 2000]) {
-    if (v is! String || v.trim().isEmpty || v.length > max)
+    if (v is! String || v.trim().isEmpty || v.length > max) {
       throw const FormatException('Incomplete AI response.');
+    }
     return v;
   }
 
   List<String> strings(dynamic v) {
-    if (v is! List || v.length > 32)
+    if (v is! List || v.length > 32) {
       throw const FormatException('Invalid AI list.');
+    }
     return v.map((s) => str(s)).toList();
   }
 
@@ -104,8 +108,9 @@ InkResponse decodeAiResponse(
     final rawQuestions = j['questions'];
     if (rawQuestions is! List ||
         rawQuestions.isEmpty ||
-        rawQuestions.length > 10)
+        rawQuestions.length > 10) {
       throw const FormatException('AI returned no valid questions.');
+    }
     final questions = <Map<String, dynamic>>[];
     for (final q in rawQuestions) {
       if (q is! Map) throw const FormatException('Invalid question.');
@@ -115,8 +120,9 @@ InkResponse decodeAiResponse(
           choices.length > 6 ||
           answer is! int ||
           answer < 0 ||
-          answer >= choices.length)
+          answer >= choices.length) {
         throw const FormatException('Invalid quiz answer.');
+      }
       questions.add({
         'prompt': str(q['prompt']),
         'choices': choices,
@@ -136,8 +142,9 @@ InkResponse decodeAiResponse(
   final steps = strings(j['steps']);
   final first = j['firstError'];
   if (steps.isEmpty ||
-      (first != null && (first is! int || first < 0 || first >= steps.length)))
+      (first != null && (first is! int || first < 0 || first >= steps.length))) {
     throw const FormatException('Invalid reasoning review.');
+  }
   return InkResponse(
     str(j['explanation']),
     engine: engine,
@@ -155,11 +162,13 @@ Map<String, dynamic>? _compiledInkScript(String text, String mode) {
     final payload = jsonDecode(text);
     if (payload is! Map ||
         payload['ir'] is! Map ||
-        payload['source'] is! String)
+        payload['source'] is! String) {
       return null;
+    }
     final ir = payload['ir'] as Map;
-    if (ir['version'] != 1 || ir['mode'] != mode)
+    if (ir['version'] != 1 || ir['mode'] != mode) {
       throw const FormatException('Invalid InkScript mode.');
+    }
     return Map<String, dynamic>.from(payload);
   } on FormatException {
     return null;

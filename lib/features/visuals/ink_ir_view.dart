@@ -630,10 +630,11 @@ class _DiagramPainter extends CustomPainter {
                         (h - 24)
               : h / 2 -
                     math.sin(i / 180 * math.pi * 2 * freq + t) * amp * h * .23;
-          if (i == 0)
+          if (i == 0) {
             path.moveTo(x, y.clamp(-h, h * 2).toDouble());
-          else
+          } else {
             path.lineTo(x, y.clamp(-h, h * 2).toDouble());
+          }
         }
         canvas.drawPath(path, aqua);
       }
@@ -687,10 +688,11 @@ class _DiagramPainter extends CustomPainter {
       );
       for (var i = 0; i <= 80; i++) {
         final p = point(i / 80);
-        if (i == 0)
+        if (i == 0) {
           path.moveTo(p.dx, p.dy);
-        else
+        } else {
           path.lineTo(p.dx, p.dy);
+        }
       }
       canvas.drawLine(Offset(12, h - 24), Offset(w - 12, h - 24), line);
       canvas.drawPath(path, aqua);
@@ -729,10 +731,14 @@ class _DiagramPainter extends CustomPainter {
         ],
         [Offset(w * .76, h * .36), Offset(w * .76, h * .64)],
       ];
-      for (var i = 0; i < layers.length - 1; i++)
-        for (final a in layers[i])
-          for (final b in layers[i + 1]) canvas.drawLine(a, b, line);
-      for (var i = 0; i < layers.length; i++)
+      for (var i = 0; i < layers.length - 1; i++) {
+        for (final a in layers[i]) {
+          for (final b in layers[i + 1]) {
+            canvas.drawLine(a, b, line);
+          }
+        }
+      }
+      for (var i = 0; i < layers.length; i++) {
         for (final p in layers[i]) {
           canvas.drawCircle(
             p,
@@ -741,6 +747,7 @@ class _DiagramPainter extends CustomPainter {
           );
           canvas.drawCircle(p, 4, Paint()..color = colors.paper);
         }
+      }
       return;
     }
     if (type == 'SortingVisualizer' ||
@@ -851,13 +858,14 @@ class _ScenePainter extends CustomPainter {
         ..style = PaintingStyle.stroke;
       final fill = Paint()..color = color.withValues(alpha: .6);
       final x = n(node, 'x', 0), y = n(node, 'y', 0);
-      if (type == 'Circle')
+      if (type == 'Circle') {
         canvas.drawCircle(
           Offset(x, y),
           n(node, 'radius', 12).clamp(0, 500),
           fill,
         );
-      if (type == 'Rect')
+      }
+      if (type == 'Rect') {
         canvas.drawRRect(
           RRect.fromRectAndRadius(
             Rect.fromLTWH(x, y, n(node, 'width', 40), n(node, 'height', 30)),
@@ -865,6 +873,7 @@ class _ScenePainter extends CustomPainter {
           ),
           fill,
         );
+      }
       if (type == 'Line' || type == 'Arrow') {
         final a = Offset(n(node, 'x1', x), n(node, 'y1', y)),
             b = Offset(n(node, 'x2', x + 40), n(node, 'y2', y));

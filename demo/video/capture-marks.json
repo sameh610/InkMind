@@ -1,0 +1,50 @@
+{
+  "marks": [
+    {
+      "name": "pendulum",
+      "seconds": 3.2,
+      "detail": "Prepared InkMind Demo opened"
+    },
+    {
+      "name": "animate-ready",
+      "seconds": 5.01,
+      "detail": "Reused the previously generated pendulum rig from this real demo profile"
+    },
+    {
+      "name": "animate-ready",
+      "seconds": 6.22,
+      "detail": "Motion controls appeared"
+    },
+    {
+      "name": "animate-playback",
+      "seconds": 10.61,
+      "detail": "Original ink motion played"
+    },
+    {
+      "name": "moon-drop",
+      "seconds": 12.94,
+      "detail": "Gravity changed from Earth to the Moon value, verified through the live slider"
+    },
+    {
+      "name": "inkdebug",
+      "seconds": 29.67,
+      "detail": "Displayed the saved, AI-verified first-error trace and correction branch"
+    },
+    {
+      "name": "graph-request",
+      "seconds": 40.2,
+      "detail": "Sent the selected equation and graph instruction through the notebook UI"
+    },
+    {
+      "name": "graph-ready",
+      "seconds": 44.12,
+      "detail": "Interactive graph and coefficient control shown"
+    },
+    {
+      "name": "ai-settings",
+      "seconds": 66.12,
+      "detail": "Close settings · AI performance Automatic model preference Fast and Balanced favor the small planner. Quality selects a larger compatible model within an estimated memory budget. An explicit model choice takes priority. Balanced · Models · Use Auto · Use model · Use model"
+    }
+  ],
+  "errors": []
+}
